@@ -4,11 +4,11 @@
 }
 
 body {
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 3vw;
-    margin-top: 50px;
 }
 
 main {
@@ -32,10 +32,11 @@ main {
     background-color: rgb(99, 156, 70);
 }
 
-h1 {
-    border: 1px solid red;
+h1,
+.card__score {
     text-align: center;
     font-size: 4vw;
+    font-weight: bold;
 }
 
 .active {
@@ -50,61 +51,61 @@ h1 {
     line-height: 4vw;
 }
 
-.card__command {
+.card__btn-new,
+.card__img,
+.card__btn-hold,
+.card__img-instructions {
     position: absolute;
-    border: 3px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
 }
 
-img {
-    width: 50px;
-    height: 50px;
-}
-
-
-/*
-img {
-    background-color: transparent;
-    width: 10vw;
-    height: 10vw;
-}
-
-button,
-img {
-    background-color: transparent;
-    border: 1px solid rgb(194, 194, 194);
+.card__btn-new,
+.card__btn-hold {
     border-radius: 10px;
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-button {
-    font-size: 2vw;
-    font-weight: bold;
-}
-
-.card__btn-new {
-    top: 5rem;
+    border: 0;
+    background-color: rgba(95, 208, 233, 0.604);
+    padding: 5px 10px;
 }
 
 .card__img {
-    top: 13rem;
-}
-
-.card__btn-role {
-    top: 18rem;
+    width: 12vw;
+    height: 12vw;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card__btn-hold {
-    top: 19rem;
-}*/
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.card__img-instructions {
+    top: 5px;
+    right: 5px;
+    width: 20px;
+}
+
+.card__btn-new {
+    top: 5px;
+    left: 5px;
+}
+
+.card__info {
+    visibility: hidden;
+    position: absolute;
+    background-color: rgba(128, 128, 128, 0.649);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card__description {
+    width: 70vw;
+    background-color: rgba(255, 255, 255, 0.782);
+    border-radius: 10px;
+    line-height: 3em;
+}
