@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css.css" />
+
+    <title>Document</title>
+</head>
+
+<body>
+    <main>
+        <div class="card player-1 active" data-player="player-1">
+            <h1>PLAYER 1</h1>
+            <p class="card__score">0</p>
+
+            <div class="card__score-container">
+                <p>Current</p>
+                <p class="card__current-score">0</p>
+            </div>
+        </div>
+        <div class="card player-2" data-player="player-2">
+            <h1>PLAYER 2</h1>
+            <p class="card__score">0</p>
+            <div class="card__score-container">
+                <p>Current</p>
+                <p class="card__current-score">0</p>
+            </div>
+        </div>
+        <div class="card__command">
+            <button class="card__btn-new">NEW GAME</button>
+            <img class="card__img" src="./img/1.png" alt="" />
+            <div class="footer">
+                <button class="card__btn-role">ROLE DICE</button>
+                <button class="card__btn-hold">HOLD</button>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="./js.js"></script>
+
+</html>
